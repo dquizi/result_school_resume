@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Изучение основ веб-разработки на примере сайта-резюме">
+    <meta name="keywords" content="html, course, css, tags">
+    <title>Test-Resume</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab&display=swap');
+    </style>
+</head>
+<body>
+
+    <img src="avatar.jpg" alt="avatar" width="200">
+
+    <h1>Денис Юрик</h1>
+
+    <p>Я работаю в космической отрасли, а в свободное время изучаю <strong>веб-разработку.</strong></p>
+
+    <p>Люблю путешествия, спорт, пробовать <em>что-то новое</em> и заниматься волонтерством.</p>
+
+    <h4>Социальные сети:</h4>
+
+    <a href="https://vk.com/denis.yurik" target="_blank">VK</a>
+    |
+    <a href="https://t.me/denis_yurik" target="_blank">Телеграм</a>
+
+    <h2>Мои хобби</h2>
+
+    <ol>
+        <li>Путешествия</li>
+        <li>Спорт</li>
+        <li>Саморазвитие</li>
+        <li>Волонтерство</li>
+    </ol>
+
+    <h2>Опыт работы</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Название</th>
+                <th>Должность</th>
+                <th>Год</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Стройка</th>
+                <th>Инженер-геодезист</th>
+                <th>2014-2015</th>
+            </tr>
+            <tr>
+                <th>Космическая отрасль</th>
+                <th>Инженер-аналитик</th>
+                <th>2015-н.в.</th>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Связаться со мной</h2>
+
+    <form action="/">
+        <div>
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" placeholder="Введите имя">
+        </div>
+
+        <div>
+            <label for="email">Ваш email:</label>
+            <input type="email" id="email" placeholder="Введите email">
+        </div>
+        
+        <div>
+            <label for="message">Ваше сообщение:</label>
+            <br>
+            <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+        </div>
+
+        <input type="submit" value="Отправить!">
+    </form>
+</body>
+</html>
