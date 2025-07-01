@@ -187,10 +187,6 @@ textarea:focus::placeholder {
         display: inline-block;
         text-align: center;
     }
-
-    .table td {
-        line-height: normal;
-    }
 }
 
 @media (max-width: 480px) {
