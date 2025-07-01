@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    background-color: #0a5b89;
+    color: #fff9dc;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+table {
+    margin-top: 15px;
+}
+
+table tbody th {
+    font-weight: normal;
+}
+
+th:not(thead th) {
+    text-align: left;
+}
+
+thead {
+    border-bottom: 1px solid #000;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    line-height: 2.0;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+.table tr {
+    padding-bottom: 10px;
+}
+
+.table tbody tr:nth-child(odd) {
+    background: #e5c9c9;
+}
+
+.info {
+    display: flex;
+}
+
+.info img {
+    height: 250px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+}
+
+.info-text {
+    margin-left: 30px;
+}
+
+.info-text p {
+    font-style: italic;
+    font-weight: bold;
+}
+
+h1,
+a {
+    color: #fff;
+}
+
+h2 {
+    margin: 0;
+}
+
+.card {
+    border-radius: 20px;
+    color: #333;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.contact form div {
+    margin-bottom: 10px;
+}
+
+.contact h2 {
+    margin-bottom: 15px;
+}
+
+.bg-yellow {
+    background-color: #fff9dc;
+}
+
+.bg-red {
+    background-color: #ffe5e5;
+}
+
+.bg-green {
+    background-color: #e5ffe7;
+}
+
+.btn {
+    border: 1px solid light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    padding: 10px;
+    transition: 0.5s;
+    font-family: inherit;
+}
+
+.btn:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: rgb(0, 255, 234);
+}
+
+a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+a:visited {
+    color: #009c23;
+}
+
+.hobby-list li,
+.courses li {
+    margin-bottom: 10px;
+}
+
+form h2 {
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-row .form-group {
+    display: inline-block;
+    margin-right: 20px;
+    width: 50%;
+}
+
+.form-row .form-group:last-child {
+    margin-right: 0;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #000;
+    padding: 15px 0 5px;
+    outline: none;
+    font-family: inherit;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-style: italic;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+@media (max-width: 650px) {
+    .info {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .table td {
+        line-height: normal;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-row {
+        display: inline-block;
+    }
+
+    .form-row .form-group {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .table td {
+        line-height: normal;
+    }
+}
